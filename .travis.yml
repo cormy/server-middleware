@@ -1,0 +1,22 @@
+language: php
+
+php:
+  - 7
+  - hhvm
+
+sudo: false
+
+install:
+  - composer selfupdate
+  - composer install
+  - echo $TRAVIS_PHP_VERSION
+  - if [ "$TRAVIS_PHP_VERSION" == "7" ]; then composer global require --update-no-dev sugared-rim/cs; fi
+  - export PATH=$PATH:`composer global config bin-dir --absolute`
+
+script:
+  - composer travis
+  - if [ "$TRAVIS_PHP_VERSION" == "7" ]; then composer lint; fi
+
+matrix:
+  allow_failures:
+    - php: hhvm
