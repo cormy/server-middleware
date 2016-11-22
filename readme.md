@@ -2,7 +2,7 @@
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/db7c420b-980e-4b03-8639-be2ad3af136c/big.png)](https://insight.sensiolabs.com/projects/db7c420b-980e-4b03-8639-be2ad3af136c)
 
-> Common interfaces for Cormy [PSR-7](http://www.php-fig.org/psr/psr-7) server middlewares
+> :nut_and_bolt: Common interfaces for Cormy [PSR-7](http://www.php-fig.org/psr/psr-7) server middlewares
 
 
 ## Install
